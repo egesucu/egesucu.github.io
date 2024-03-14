@@ -34,7 +34,7 @@
     }
 
     .name {
-        font-size: 20pt;
+        font-size: 25pt;
     }
 
     .links {
@@ -67,7 +67,7 @@
     }
 
     .name {
-        font-size: 18pt;
+        font-size: 20pt;
     }
 }
 
@@ -75,7 +75,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
@@ -148,10 +151,13 @@ body {
 
 .link-description {
     margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 15pt;
 }
 
 .button {
     display: flex;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -161,7 +167,7 @@ body {
     cursor: pointer;
     padding: 10px;
     flex-grow: 1;
-    transition: color 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .button i {
@@ -170,5 +176,7 @@ body {
 }
 
 .button:hover {
-    color: var(--button-text-color);
+    background-color: var(--button-text-color);
+    border-radius: 10px;
+    transform: scale(1.1);
 }
