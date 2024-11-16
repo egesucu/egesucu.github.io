@@ -180,3 +180,8 @@ body {
     border-radius: 10px;
     transform: scale(1.1);
 }
+
+.hidden-link {
+    display: none;
+    pointer-events: none;
+}
